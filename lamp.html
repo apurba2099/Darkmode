@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DarkMode</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .photo{
+            display: flex;
+
+        }
+        .photo img{
+            margin: 20px;
+            border: 1px solid lightgrey;
+        }
+        .para{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+        .para img{
+            margin:10px 20px;
+            border: 1px solid lightgrey;
+        }
+        .head h1{
+            border-bottom: 2px solid lightgrey;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        label {
+            position: absolute;
+            width: 45px;
+            height: 22px;
+            right: 20px;
+            top: 20px;
+            border: 2px solid;
+            border-radius: 20px;
+        }
+
+        label:before {
+            position: absolute;
+            content: '';
+            width: 20px;
+            height: 20px;
+            left: 1px;
+            top: 1px;
+            border-radius: 50%;
+            background: #000;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+
+        label.active:before {
+            left: 24px;
+            background: #fff;
+        }
+
+        body.night {
+            background: #000;
+            color: #fff;
+        }
+        .center{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: black;
+            color: white;
+            padding: 20px 5px;
+            font-size: 1.5rem;
+        }
+
+        @media screen and (max-width: 1170px) and (min-width: 10px) {
+            .photo{
+            display: flex;
+            flex-direction: column;
+            padding: 5px 8px;
+            margin: 4px 4px;
+            border-radius: 18px;
+            font-size: 15px;
+
+        }
+        .photo img{
+            margin: 50px;
+            border: 1px solid lightgrey;
+        }
+        .photo p{
+           padding: 10px 50px;
+
+        }
+        .para{
+            display: flex;
+            flex-direction: column;
+            padding: 5px 8px;
+            margin: 4px 4px;
+            width: 100%;
+            border: 1px solid lightgrey;
+            border-radius: 18px;
+            font-size: 15px;
+
+        }
+        .para img{
+            margin: 50px;
+            border: 1px solid lightgrey;
+        }
+        .head h1{
+            position: relative;
+            top: 35px;
+           
+        }
+        .center{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: black;
+            color: white;
+            padding: 10px 2px;
+            font-size:20px;
+        }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <label id="dark-change"></label>
+    </header>
+    <div class="container">
+        <div class="head">
+            <h1>The DarkMode</h1>
+        </div>
+        <div class="photo">
+            <img src="lampA.jpg" height="400px;" width="600px">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil vel, possimus tempore cupiditate quasi hic reiciendis iure iste iusto ad explicabo provident ullam voluptatum! Quod temporibus possimus laboriosam voluptatum iusto. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas molestias ad, accusantium, officia cumque labore praesentium vero, odit eveniet minima asperiores animi commodi. Architecto repudiandae ab sint molestias enim facilis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id mollitia soluta consequatur quo ab maiores, ut, tenetur maxime magnam dolorem veniam vitae consequuntur molestiae. Praesentium inventore cumque quam labore esse eos placeat dolorem, ab ipsum quisquam! Aut cum veniam veritatis eaque neque vero, mollitia ullam blanditiis reprehenderit modi iusto atque cumque, quasi dicta asperiores harum animi ea consequuntur aliquid adipisci necessitatibus! Praesentium qui nobis minima eius reiciendis neque officia voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere 
+                molestiae. Praesentium inventore cumque quam labore esse eos placeat dolorem, ab ipsum quisquam! Aut cum veniam veritatis eaque neque vero, mollitia ullam blanditiis reprehenderit modi iusto atque cumque, quasi dicta asperiores harum animi ea consequuntur aliquid adipisci necessitatibus! Praesentium qui nobis minima eius reiciendis neque officia voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora quam aperiam, dolorem dicta voluptatibus quod cumque doloremque laboriosam. Dolore eius doloribus atque blanditiis neque, quae enim nemo labore, consectetur aliquam quidem inventore, animi autem ullam ut. Laborum provident fugiat animi repellendus nostrum laudantium, architecto atque at necessitatibus tenetur iure obcaecati!
+            </p>
+        </div>
+        <hr>
+        <div class="para">
+            <div><img src="lampC.jpg" height="400px;" width="600px"></div>
+         <div><p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem asperiores, tempore repellendus consequuntur sit a perferendis, veniam fugiat, saepe dolorum accusantium quos facilis! Vero vel eum natus! Totam, illum corporis tempora distinctio molestiae dolor odit quam nobis fugit itaque perferendis, veniam dolorem aut iusto ipsum mollitia! Quas, illo nobis? Odio, inventore itaque dolores facere laborum dolorum cum. Officiis cum non esse pariatur vitae repellat ducimus ipsam consequatur nihil nulla ratione praesentium perspiciatis quo incidunt, reiciendis obcaecati aliquam, accusantium voluptates eius autem. Optio ea error consectetur necessitatibus! Dignissimos laborum ab nisi, vel nihil autem, repudiandae aliquam magnam quod sed aut corrupti!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil vel, possimus tempore cupiditate quasi hic reiciendis iure iste iusto ad explicabo provident ullam voluptatum! Quod temporibus possimus laboriosam voluptatum iusto. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas molestias ad, accusantium, officia cumque labore praesentium vero, odit eveniet minima asperiores animi commodi. Architecto repudiandae ab sint molestias enim facilis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id mollitia soluta consequatur quo ab maiores, ut, tenetur maxime magnam dolorem veniam vitae consequuntur molestiae. Praesentium inventore cumque quam labore esse eos placeat dolorem, ab ipsum quisquam! Aut cum </p></div>
+            <div><img src="lampB.jpg" height="400px;" width="600px"></div>
+           
+        </div>
+    </div>
+    <footer>
+        <div class="center">
+            Copyright &copy; DarkMode All rights reserved | develop by apurbadutta
+        </div>
+    </footer>
+</body>
+<script>
+    var content = document.getElementsByTagName('body')[0];
+    var darkMode = document.getElementById('dark-change');
+    darkMode.addEventListener('click', function () {
+        darkMode.classList.toggle('active');
+        content.classList.toggle('night');
+    })
+</script>
+
+</html>
